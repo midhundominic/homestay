@@ -32,17 +32,17 @@ export default function HeaderNew() {
           : "bg-white/10 backdrop-blur-md"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-0 flex items-center justify-between">
         {/* Logo */}
-        <div className="w-[60px] md:w-[110px]">
+        <div className="w-[50px] md:w-[100px]">
           <Link href="/" className="flex items-center">
             <Image
               src="/assets/logo3.png"
-              alt="Anamala Homestays"
+              alt="Upavan Villa"
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto  max-h-[100px]"
+              className="w-full h-auto  max-h-[100px] mt-2 mb-2"
               priority
             />
           </Link>
@@ -75,6 +75,15 @@ export default function HeaderNew() {
               } hover:text-green-600`}
           >
             Gallery
+          </Link>
+          <Link
+            href="#contact"
+            scroll={true}
+            className={`text-md font-medium transition-colors ${
+                scrolled ? "text-gray-800" : "text-white"
+              } hover:text-green-600`}
+          >
+            Contact
           </Link>
           <div className=" md:block pb-1">
             <Button

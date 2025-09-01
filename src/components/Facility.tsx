@@ -14,9 +14,13 @@ import {
   Baby,
   Waves,
   Sofa,
-  Utensils,
   Train,
   PawPrint,
+  Newspaper,
+  ShowerHead,
+  Luggage,
+  CctvIcon,
+  Shield
 } from "lucide-react";
 
 export default function AboutAndFacilities() {
@@ -24,18 +28,29 @@ export default function AboutAndFacilities() {
 
   const facilities = [
     { icon: Wifi, label: "Free Wifi", category: "General" },
+    { icon: ParkingSquare, label: "Free Parking", category: "General" },
     { icon: Home, label: "Family rooms", category: "General" },
     { icon: AirVent, label: "Air conditioning", category: "General" },
-    { icon: Coffee, label: "Complimentary breakfast", category: "Food & Drink" },
-    { icon: Utensils, label: "Home-cooked food", category: "Food & Drink" },
-    { icon: Bath, label: "Attached Bathroom", category: "Room Amenities" },
+    { icon: Newspaper, label: "News Paper", category: "General" },
+    { icon: Luggage, label: "Luggage Assistance ", category: "General" },
+    {
+      icon: Shield,
+      label: "24/7 Security",
+      category: "General",
+    },
+    // { icon: Utensils, label: "Home-cooked food", category: "Food & Drink" },
+    { icon: ShowerHead, label: "Seperate Drivers Room", category: "Room Amenities" },
     { icon: Sofa, label: "Fully furnished", category: "Room Amenities" },
     { icon: Baby, label: "Kids Play Area", category: "Activities" },
-    { icon: Waves, label: "Swimming Pool", category: "Health & Wellness" },
-    { icon: ParkingSquare, label: "Free Car Parking", category: "Parking" },
+    { icon: Waves, label: "First-aid Services", category: "Health & Wellness" },
+    { icon: CctvIcon, label: "CCTV", category: "Safety and Security" },
     { icon: Feather, label: "Housekeeping", category: "General" },
     { icon: PawPrint, label: "Pets Friendly", category: "General" },
-    { icon: Train, label: "Paid Railway Station Transfers", category: "General" },
+    {
+      icon: Train,
+      label: "Paid Railway Station Transfers",
+      category: "General",
+    },
   ];
 
   const categories = Array.from(new Set(facilities.map((f) => f.category)));
@@ -57,15 +72,19 @@ export default function AboutAndFacilities() {
           viewport={{ once: true }}
           className="flex-1"
         >
-          <h2 className="text-2xl font-bold text-gray-800">
-            Anamala Serenity Homestay: Where Tradition Meets Tranquility
+          <div className="mt-0 pt-0 mb-2 pb-2">
+          <h2 className=" mt-0 text-4xl font-bold text-gray-800">
+            Welcome to Upavan Villa
           </h2>
+          </div>
           <p className="text-gray-500 mt-1">About Us</p>
           <p className="text-gray-600 mt-4 leading-relaxed">
-            Discover the beauty and charm of traditional Kerala living at
-            Anamala Homestay in Thiruvilwamala. This 80–year–old ancestral home
-            has been carefully restored to preserve its heritage and offer
-            guests a unique and authentic experience.
+            Nestled in the serene town of Aluva, Upavan Villa offers a tranquil
+            retreat that blends traditional Kerala architecture with modern
+            comforts. Located just 9.4 km from Cochin International Airport and
+            approximately 4 km Railway Station, our homestay
+            provides easy access to major transportation hubs, making it an
+            ideal choice for travelers seeking convenience and comfort
           </p>
         </motion.div>
 
@@ -147,7 +166,9 @@ export default function AboutAndFacilities() {
               >
                 ✕
               </button>
-              <h3 className="text-xl font-bold text-center mb-6">All Facilities</h3>
+              <h3 className="text-black text-xl font-bold text-center mb-6">
+                All Facilities
+              </h3>
               <div className="space-y-6">
                 {categories.map((category) => (
                   <div key={category}>

@@ -12,10 +12,16 @@ export default function Button({
 }) {
   const [showModal, setShowModal] = useState(false);
 
+  const handleNavigation=()=>{
+    window.open("https://www.makemytrip.com/hotels/upavan_villa-details-cochin.html")
+
+  }
+
   return (
     <>
       <button
-        onClick={() => setShowModal(true)}
+      onClick={handleNavigation}
+        // onClick={() => setShowModal(true)}
         className={`px-6 py-3 rounded-xl font-semibold text-base text-white bg-green-600 hover:scale-105 transition-all duration-300 ${className}`}
       >
         {text}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,6 +25,40 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="ld-json"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LodgingBusiness",
+              name: "Upavan Villa",
+              description:
+                "Upavan Villa is a premium homestay in Aluva, Ernakulam. Near Kochi Airport, Aluva Railway Station, Rajagiri Hospital, and Aluva Mahadeva Temple.",
+              image:
+                "https://res.cloudinary.com/djdjfhkie/image/upload/v1756629445/WhatsApp_Image_2025-08-23_at_21.26.20_qbsqof.jpg",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Aluva",
+                addressRegion: "Ernakulam",
+                addressCountry: "India",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "10.1076", // update with real coords
+                longitude: "76.3513",
+              },
+              url: "https://yourdomain.com",
+              telephone: "+91-9946307770",
+              sameAs: [
+                "https://www.facebook.com/people/Upavan-Villa/61579096177408/",
+                "https://www.instagram.com/upavanvilla/",
+              ],
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <section id="about">
+    <section id="contact">
       <footer className="bg-[#1A1A1A] text-[#CCCCCC] pt-16 pb-8 px-6 md:px-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-20">
           {/* Contacts */}
@@ -14,13 +14,14 @@ export default function Footer() {
               Contacts
             </h3>
             <p className="text-sm">
-              Upavan Villa &quot;CARA 40&quot;, Convent road 1, Thottakkattukara,
-              (Paroorkavala ) Velamparambu road, Aluva, Ernakulam District.
+              Upavan Villa &quot;CARA 40&quot;, Convent road 1,
+              Thottakkattukara, (Paroorkavala ) Velamparambu road, Aluva,
+              Ernakulam District.
               <br />
               India, 683108
             </p>
             <p className="mt-4 text-sm text-[#FDEBC9]">
-              reservation@upavanresort.com
+              upavanvilla@gmail.com
               <br />
               +91 9961407770
               <br />
@@ -30,7 +31,9 @@ export default function Footer() {
 
           {/* Map */}
           <div className="w-full h-full">
-            <h3 className="text-lg font-semibold text-[#E8542F] mb-4">Location</h3>
+            <h3 className="text-lg font-semibold text-[#E8542F] mb-4">
+              Location
+            </h3>
             <div className="rounded-xl overflow-hidden shadow-md w-full h-48">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2463.9097613011336!2d76.34232963724496!3d10.120611193273598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080f18166c9249%3A0xae9144449446463c!2sUpavan%20Villa!5e0!3m2!1sen!2sin!4v1753192624019!5m2!1sen!2sin"
@@ -46,7 +49,9 @@ export default function Footer() {
 
           {/* Explore */}
           <div>
-            <h3 className="text-lg font-semibold text-[#E8542F] mb-4">Explore</h3>
+            <h3 className="text-lg font-semibold text-[#E8542F] mb-4">
+              Explore
+            </h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -54,6 +59,16 @@ export default function Footer() {
                   className="hover:text-[#FDEBC9] transition-all duration-300 hover:translate-x-1 inline-block"
                 >
                   Home
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="#about"
+                  scroll={true}
+                  className="hover:text-[#FDEBC9] transition-all duration-300 hover:translate-x-1 inline-block"
+                >
+                  About
                 </Link>
               </li>
 
@@ -76,7 +91,7 @@ export default function Footer() {
             </h3>
             <div className="flex gap-4">
               <Link
-                href="https://www.instagram.com/upavanresort/"
+                href="https://www.instagram.com/upavanvilla/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -86,7 +101,7 @@ export default function Footer() {
                 />
               </Link>
               <a
-                href="https://www.facebook.com/UpavanResort/"
+                href="https://www.facebook.com/people/Upavan-Villa/61579096177408/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

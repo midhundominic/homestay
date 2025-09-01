@@ -18,7 +18,7 @@ export default function Gallery() {
   ];
 
   return (
-    <section className="bg-gray-50 py-12">
+    <section id="gallery" className="bg-gray-50 py-12">
       <div className="container mx-auto text-center">
         {/* Section Header */}
         <motion.h2

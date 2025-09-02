@@ -5,15 +5,17 @@ export default function ExplorePage() {
     <section id="about">
       {/* Normal Layout (Text Left, Images Right) */}
       <ExploreSection
-        title="Relax. Refresh. Rejuvenate."
+        title="Property and Rooms"
         description="Aluva is a serene riverside town in Ernakulam, Kerala..."
         content="Step into your private A/C luxury room, where elegance meets comfort. Thoughtfully designed interiors, plush bedding, and modern amenities ensure a stay that feels just like home — only better."
         features={[
-          "2 Floor Villa Private Balcony/View – Enjoy scenic views and fresh air.",
+          "2 Floor Luxury Villa with ample car parking space",
+          "4 spacious bedrooms",
           "Fully Air-Conditioned – Stay cool and relaxed, no matter the weather.",
-          "High-speed Wi-Fi",
-          "Spacious Interiors – Designed for both style and comfort.",
-          "24/7 concierge service",
+          "Large living spaces on both floors",
+          "⁠Large outdoor area",
+          "5 Washrooms",
+          "⁠2 Large balconies",
         ]}
         mainImage="https://res.cloudinary.com/djdjfhkie/image/upload/v1756629440/WhatsApp_Image_2025-08-23_at_21.25.30_omwsxr.jpg"
         subImage="https://res.cloudinary.com/djdjfhkie/image/upload/v1756629447/WhatsApp_Image_2025-08-23_at_21.26.25_t5k77z.jpg"

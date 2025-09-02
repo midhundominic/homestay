@@ -1,13 +1,23 @@
 "use client";
-import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import Button from "./ui/Button";
-import Link from "next/link";
 
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import Button from "./ui/Button";
+import { Menu, X, Phone, Mail } from "lucide-react";
 
 export default function Header() {
-  const [isOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
@@ -18,91 +28,104 @@ export default function Header() {
 
   return (
     <motion.header
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ y: -80 }}
+      animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 w-full z-40 bg-white/70 backdrop-blur-md shadow-sm transition-all duration-300"
-
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white shadow-md backdrop-blur-0"
+          : "bg-white/10 backdrop-blur-md"
+      }`}
     >
-      <div className="max-w-7xl mx-auto pt-2  px-3 flex justify-between items-center">
-        <div className="flex items-center gap-10">
-          <div className="w-[60px] md:w-[110px]">
+      <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+        {/* Logo */}
+        <div className="w-[50px] md:w-[100px]">
+          <Link href="/" className="flex items-center">
             <Image
               src="/assets/logo3.png"
-              alt="Upavan Villa Logo"
+              alt="Upavan Villa"
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto  max-h-[100px]"
+              className="w-full h-auto max-h-[100px]"
               priority
             />
+          </Link>
+        </div>
+
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center space-x-8">
+          <Link
+            href="/"
+            className={`text-md font-medium transition-colors ${
+              scrolled ? "text-gray-800" : "text-white"
+            } hover:text-green-600`}
+          >
+            Home
+          </Link>
+          <Link
+            href="#about"
+            className={`text-md font-medium transition-colors ${
+              scrolled ? "text-gray-800" : "text-white"
+            } hover:text-green-600`}
+          >
+            About
+          </Link>
+          <Link
+            href="#gallery"
+            scroll={true}
+            className={`text-md font-medium transition-colors ${
+              scrolled ? "text-gray-800" : "text-white"
+            } hover:text-green-600`}
+          >
+            Gallery
+          </Link>
+          <Link
+            href="#contact"
+            scroll={true}
+            className={`text-md font-medium transition-colors ${
+              scrolled ? "text-gray-800" : "text-white"
+            } hover:text-green-600`}
+          >
+            Contact
+          </Link>
+
+          {/* Contact Info (desktop only) */}
+          <div className="flex gap-10 text-sm text-green-600">
+      
+            <a href="tel:+919946307770" className="flex items-center gap-1">
+              <Phone size={16} /> +91 9946307770
+            </a>
+        
+            <a
+              href="mailto:upavanvilla@gmail.com"
+              className="flex items-center gap-1"
+            >
+              <Mail size={16} /> upavanvilla@gmail.com
+            </a>
           </div>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex gap-10">
-            <Link
-              href="/"
-              className="text-lg font-medium text-[#2c2c2c] hover:text-[#d1452a]"
-            >
-              Home
-            </Link>
-            <Link
-              href="#about"
-              className="text-lg font-medium text-[#2c2c2c] hover:text-[#d1452a]"
-            >
-              About
-            </Link>
-           
-            <Link
-              href="#gallery"
-              scroll={true}
-              className="text-lg font-medium text-[#2c2c2c] hover:text-[#d1452a]"
-            >
-              Gallery
-            </Link>
-          </nav>
-        </div>
-
-        <div className=" md:block pb-1">
           <Button
             text="Book Now"
-            className="bg-[#d1452a] text-white hover:brightness-110"
+            className="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition"
           />
-        </div>
+        </nav>
 
-        {/* Mobile Menu Button */}
-        {/* <div className="md:hidden">
+        {/* Right Side (mobile only) */}
+        <div className="flex items-center gap-3 md:hidden">
+          <Button
+            text="Book Now"
+            className="bg-green-600 text-white px-3 py-1 rounded-full text-sm"
+          />
           <button
+            className="text-gray-800"
             onClick={() => setIsOpen(!isOpen)}
-            className="focus:outline-none w-[60px] h-[60px] rounded-2xl bg-[#d1452a] flex items-center justify-center"
+            aria-label="Toggle menu"
           >
-            <svg
-              className="w-7 h-7 text-white"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              {isOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
-        </div>*/}
-      </div> 
-
+        </div>
+      </div>
 
       {/* Mobile Nav */}
       <AnimatePresence>
@@ -112,27 +135,42 @@ export default function Header() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.4 }}
-            className="fixed top-[150px] left-0 w-full bg-[#ffffff] z-40 px-6 py-6 overflow-y-auto h-[calc(100vh-100px)]"
+            className="fixed top-[60px] left-0 w-full bg-white z-40 px-6 py-6 overflow-y-auto h-[calc(100vh-70px)] md:hidden"
           >
-            <nav className="hidden md:flex gap-10">
-              <Link
-                href="/"
-                className="text-lg font-medium text-[#2c2c2c] hover:text-[#d1452a]"
-              >
+            <nav className="flex flex-col gap-6 text-lg font-medium text-gray-800">
+              <Link href="/" onClick={() => setIsOpen(false)}>
                 Home
               </Link>
-              <Link
-                href="#about"
-                className="text-lg font-medium text-[#2c2c2c] hover:text-[#d1452a]"
-              >
+              <Link href="#about" onClick={() => setIsOpen(false)}>
                 About
               </Link>
-              <Link
-                href="#pricing"
-                className="text-lg font-medium text-[#2c2c2c] hover:text-[#d1452a]"
-              >
-                Pricing
+              <Link href="#gallery" onClick={() => setIsOpen(false)}>
+                Gallery
               </Link>
+              <Link href="#contact" onClick={() => setIsOpen(false)}>
+                Contact
+              </Link>
+
+              {/* Contact Info in mobile menu */}
+              <div className="mt-6 flex flex-col gap-2 text-green-600 text-base">
+                <a href="tel:+911234567890" className="flex items-center gap-2">
+                  <Phone size={18} /> +91 12345 67890
+                </a>
+                <a
+                  href="mailto:info@upavanvilla.com"
+                  className="flex items-center gap-2"
+                >
+                  <Mail size={18} /> info@upavanvilla.com
+                </a>
+              </div>
+
+              {/* Book Now inside mobile menu */}
+              <div className="mt-6">
+                <Button
+                  text="Book Now"
+                  className="w-full bg-green-600 text-white py-2 rounded-full hover:bg-green-700 transition"
+                />
+              </div>
             </nav>
           </motion.div>
         )}

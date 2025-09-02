@@ -35,7 +35,7 @@ export default function RootLayout({
               "@type": "LodgingBusiness",
               name: "Upavan Villa",
               description:
-                "Upavan Villa is a premium homestay in Aluva, Ernakulam. Near Kochi Airport, Aluva Railway Station, Rajagiri Hospital, and Aluva Mahadeva Temple.",
+                "Upavan Villa is a homestay in Aluva, Ernakulam. Near Kochi Airport, Aluva Railway Station, Rajagiri Hospital, and Aluva Mahadeva Temple.",
               image:
                 "https://res.cloudinary.com/djdjfhkie/image/upload/v1756629445/WhatsApp_Image_2025-08-23_at_21.26.20_qbsqof.jpg",
               address: {

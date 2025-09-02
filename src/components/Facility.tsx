@@ -20,7 +20,7 @@ import {
   ShowerHead,
   Luggage,
   CctvIcon,
-  Shield
+  Shield,
 } from "lucide-react";
 
 export default function AboutAndFacilities() {
@@ -33,12 +33,7 @@ export default function AboutAndFacilities() {
     { icon: AirVent, label: "Air conditioning", category: "General" },
     { icon: Newspaper, label: "News Paper", category: "General" },
     { icon: Luggage, label: "Luggage Assistance ", category: "General" },
-    {
-      icon: Shield,
-      label: "24/7 Security",
-      category: "General",
-    },
-    // { icon: Utensils, label: "Home-cooked food", category: "Food & Drink" },
+    { icon: Shield, label: "24/7 Security", category: "General" },
     { icon: ShowerHead, label: "Seperate Drivers Room", category: "Room Amenities" },
     { icon: Sofa, label: "Fully furnished", category: "Room Amenities" },
     { icon: Baby, label: "Kids Play Area", category: "Activities" },
@@ -46,11 +41,7 @@ export default function AboutAndFacilities() {
     { icon: CctvIcon, label: "CCTV", category: "Safety and Security" },
     { icon: Feather, label: "Housekeeping", category: "General" },
     { icon: PawPrint, label: "Pets Friendly", category: "General" },
-    {
-      icon: Train,
-      label: "Paid Railway Station Transfers",
-      category: "General",
-    },
+    { icon: Train, label: "Paid Railway Station Transfers", category: "General" },
   ];
 
   const categories = Array.from(new Set(facilities.map((f) => f.category)));
@@ -72,19 +63,14 @@ export default function AboutAndFacilities() {
           viewport={{ once: true }}
           className="flex-1"
         >
-          <div className="mt-0 pt-0 mb-2 pb-2">
-          <h2 className=" mt-0 text-4xl font-bold text-gray-800">
-            Welcome to Upavan Villa
-          </h2>
-          </div>
+          <h2 className="text-4xl font-bold text-gray-800">Welcome to Upavan Villa</h2>
           <p className="text-gray-500 mt-1">About Us</p>
           <p className="text-gray-600 mt-4 leading-relaxed">
-            Nestled in the serene town of Aluva, Upavan Villa offers a tranquil
-            retreat that blends traditional Kerala architecture with modern
-            comforts. Located just 9.4 km from Cochin International Airport and
-            approximately 4 km Railway Station, our homestay
-            provides easy access to major transportation hubs, making it an
-            ideal choice for travelers seeking convenience and comfort
+            Nestled in the serene town of Aluva, Upavan Villa offers a tranquil retreat that blends
+            traditional Kerala architecture with modern comforts. Located just 9.4 km from Cochin
+            International Airport and approximately 4 km Railway Station, our homestay provides easy
+            access to major transportation hubs, making it an ideal choice for travelers seeking
+            convenience and comfort
           </p>
         </motion.div>
 
@@ -114,9 +100,7 @@ export default function AboutAndFacilities() {
         className="mt-12 text-center"
       >
         <h3 className="text-2xl font-bold text-gray-800">Popular Facilities</h3>
-        <p className="text-gray-500 mt-1">
-          Explore the most loved facilities offered by our property.
-        </p>
+        <p className="text-gray-500 mt-1">Explore the most loved facilities offered by our property.</p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 max-w-4xl mx-auto">
           {facilities.slice(0, 8).map((facility, idx) => (
@@ -151,14 +135,16 @@ export default function AboutAndFacilities() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+            onClick={() => setIsModalOpen(false)} // ✅ close when clicking outside
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
           >
             <motion.div
+              onClick={(e) => e.stopPropagation()} // ✅ prevent closing when clicking inside
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 50, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="bg-white rounded-2xl shadow-lg p-6 max-w-2xl w-full relative"
+              className="bg-white rounded-2xl shadow-lg p-6 max-w-2xl w-full relative max-h-[80vh] overflow-y-auto"
             >
               <button
                 onClick={() => setIsModalOpen(false)}
@@ -166,9 +152,7 @@ export default function AboutAndFacilities() {
               >
                 ✕
               </button>
-              <h3 className="text-black text-xl font-bold text-center mb-6">
-                All Facilities
-              </h3>
+              <h3 className="text-black text-xl font-bold text-center mb-6">All Facilities</h3>
               <div className="space-y-6">
                 {categories.map((category) => (
                   <div key={category}>
@@ -177,10 +161,7 @@ export default function AboutAndFacilities() {
                       {facilities
                         .filter((f) => f.category === category)
                         .map((facility, idx) => (
-                          <div
-                            key={idx}
-                            className="flex items-center gap-2 text-gray-700"
-                          >
+                          <div key={idx} className="flex items-center gap-2 text-gray-700">
                             <facility.icon size={20} />
                             <span>{facility.label}</span>
                           </div>

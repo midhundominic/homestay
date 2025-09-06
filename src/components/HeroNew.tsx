@@ -15,7 +15,7 @@ export default function ScrollIllusionSection() {
       >
         {/* Overlay for text readability */}
         <div className="bg-black/40 p-6 rounded-2xl">
-          <h2 className="text-4xl font-bold text-white mb-4">Stay With Comfort</h2>
+          <h2 className="text-4xl text-center font-bold text-white mb-4">Stay With Comfort</h2>
           <p className="text-lg text-gray-200 max-w-xl text-center">
             Experience nature, peace, and the warmth of home. Scroll to explore more about our homestay.
           </p>

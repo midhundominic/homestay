@@ -13,36 +13,36 @@ export default function NearbyAttractions() {
       image: "/images/attractions/areekalwaterfalls.jpg",
     },
     {
-      title: "Varikkasseri Mana",
+      title: "Aluva Mahadeva Temple",
       distance: "15 km",
       description:
         "A traditional Kerala–style ancestral home, showcasing the region's architectural grandeur and cultural significance.",
       image: "/images/attractions/cherayibeach.jpg",
     },
     {
-      title: "Killikurissy Mana",
-      distance: "6 km",
+      title: "Cherai Beach",
+      distance: "20 km",
       description:
         "A memorial dedicated to Kunjan Nambiar, the father of Malayalam satire, often associated with cultural heritage.",
       image: "/images/attractions/Hillpalacemuseum.jpg",
     },
     {
-      title: "Punarjani Cave",
-      distance: "7 km",
+      title: "Athirappilli Waterfall ",
+      distance: "53 km",
       description:
         "A 150–meter–long cave linked to the 'noozal' ritual, believed to offer spiritual rebirth to visitors.",
       image: "/images/attractions/paniyeli.jpg",
     },
     {
-      title: "Ivor Madam (Parthasarathy Temple)",
+      title: "Kochi",
       distance: "3 km",
       description:
         "A peaceful temple dedicated to Lord Parthasarathy, offering a serene environment for spiritual reflection.",
       image: "/images/attractions/ivormadam.jpg",
     },
     {
-      title: "Kuthampully Handloom Village",
-      distance: "3 km",
+      title: "Pq Exotic Birds Park",
+      distance: "14 km",
       description:
         "Famous for its traditional handwoven kasavu sarees, offering insight into Kerala’s weaving heritage.",
       image: "/images/attractions/kuthampully.jpg",

@@ -46,7 +46,6 @@ export default function Home() {
     <>
     <main className="flex-grow">
       <HeaderNew/>
-      {/* <Header/> */}
       <Hero/>
       <AboutAndFacilities/>
       <HeroNew/>

@@ -1,13 +1,11 @@
 import Hero from "@/components/Hero";
 import AboutAndFacilities from "@/components/Facility";
 import Gallery from "@/components/Gallery";
-import NearbyAttraction from "@/components/NearbyAttraction";
 import NearbyAttractionsServer from "@/components/NearbyAttraction/NearbyAttractionsServer";
 import HeaderNew from "@/components/Header";
 import HeroNew from "@/components/HeroNew"
 import Reviews from "@/components/Reviews";
 import HeroFlip from "@/components/HeroFlip"
-import { Metadata } from "next"
 
 
 import Footer from "@/components/Footer";
@@ -53,7 +51,6 @@ export default function Home() {
       <HeroFlip/>
       <Reviews/>
       <Gallery/>
-      {/* <NearbyAttraction/> */}
       <NearbyAttractionsServer/>
 
     

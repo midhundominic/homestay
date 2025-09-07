@@ -5,8 +5,8 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   AirVent,
-  Bath,
-  Coffee,
+  // Bath,
+  // Coffee,
   Home,
   ParkingSquare,
   Wifi,

@@ -3,7 +3,15 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function NearbyAttractionsClient({ attractions }: { attractions: any[] }) {
+type Attraction = {
+  image: string;
+  alt: string;
+  title: string;
+  distance: string;
+  description: string;
+};
+
+export default function NearbyAttractionsClient({ attractions }: { attractions: Attraction[] }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
       {attractions.map((item, idx) => (

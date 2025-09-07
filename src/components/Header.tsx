@@ -153,14 +153,14 @@ export default function Header() {
 
               {/* Contact Info in mobile menu */}
               <div className="mt-6 flex flex-col gap-2 text-green-600 text-base">
-                <a href="tel:+911234567890" className="flex items-center gap-2">
-                  <Phone size={18} /> +91 12345 67890
+                <a href="tel:+919946307770" className="flex items-center gap-2">
+                  <Phone size={18} /> +91 9946307770
                 </a>
                 <a
-                  href="mailto:info@upavanvilla.com"
+                  href="mailto:upavanvilla@gmail.com"
                   className="flex items-center gap-2"
                 >
-                  <Mail size={18} /> info@upavanvilla.com
+                  <Mail size={18} /> upavanvilla@gmail.com
                 </a>
               </div>
 

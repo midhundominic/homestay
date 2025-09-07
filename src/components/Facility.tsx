@@ -129,7 +129,7 @@ export default function AboutAndFacilities() {
           className="flex-1"
         >
           <Image
-            src="/images/img_front1.jpeg"
+            src="https://res.cloudinary.com/djdjfhkie/image/upload/v1757263952/WhatsApp_Image_2025-08-23_at_21.26.22_zhtvjt.jpg"
             alt="Homestay view"
             width={600}
             height={400}

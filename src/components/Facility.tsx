@@ -90,7 +90,7 @@ export default function AboutAndFacilities() {
           {/* Heading on top */}
           <div className="text-center mb-8">
             <h2 className="text-4xl font-bold text-gray-800">
-              Welcome to Upavan Villa
+              Welcome to Upavan Villa - Your Ideal Homestay in Aluva, Kochi
             </h2>
             <p className="text-gray-500 mt-2 mb-0">About Us</p>
           </div>
@@ -130,7 +130,7 @@ export default function AboutAndFacilities() {
         >
           <Image
             src="https://res.cloudinary.com/djdjfhkie/image/upload/v1757263952/WhatsApp_Image_2025-08-23_at_21.26.22_zhtvjt.jpg"
-            alt="Homestay view"
+            alt="Exterior view of Upavan Villa, a welcoming homestay in Aluva"
             width={600}
             height={400}
             className="rounded-lg shadow-lg object-cover w-full h-full"

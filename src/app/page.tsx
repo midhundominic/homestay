@@ -27,7 +27,7 @@ export const metadata = {
     title: "Upavan Villa - Premium Homestay in Aluva, Ernakulam",
     description:
       "Stay at Upavan Villa homestay in Aluva, Ernakulam – near Kochi International Airport, Aluva Railway Station, Rajagiri Hospital, and CIAL convention centre.",
-    url: "https://yourdomain.com",
+    url: "https://upavanvilla.com",
     images: [
       {
         url: "https://res.cloudinary.com/djdjfhkie/image/upload/v1756629445/WhatsApp_Image_2025-08-23_at_21.26.20_qbsqof.jpg",

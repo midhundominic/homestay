@@ -94,7 +94,7 @@ export default function Header() {
           <div className="flex gap-10 text-sm text-green-600">
       
             <a href="tel:+919946307770" className="flex items-center gap-1">
-              <Phone size={16} /> +91 9946307770
+              <Phone size={16} /> +91 9633216997
             </a>
         
             <a
@@ -153,8 +153,8 @@ export default function Header() {
 
               {/* Contact Info in mobile menu */}
               <div className="mt-6 flex flex-col gap-2 text-green-600 text-base">
-                <a href="tel:+919946307770" className="flex items-center gap-2">
-                  <Phone size={18} /> +91 9946307770
+                <a href="tel:+919633216997" className="flex items-center gap-2">
+                  <Phone size={18} /> +91 9633216997
                 </a>
                 <a
                   href="mailto:upavanvilla@gmail.com"

@@ -1,7 +1,12 @@
 "use client";
 
 import { Facebook, Instagram } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata:Metadata={
+  title:"About"
+};
 
 export default function Footer() {
   return (
@@ -25,7 +30,7 @@ export default function Footer() {
               <br />
               +91 9961407770
               <br />
-              +91 9946307770
+              +91 9633216997
             </p>
           </div>
 

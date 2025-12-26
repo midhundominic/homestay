@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Hero from "@/components/Hero";
 import AboutAndFacilities from "@/components/Facility";
 import Gallery from "@/components/Gallery";
@@ -10,7 +11,7 @@ import HeroFlip from "@/components/HeroFlip"
 
 import Footer from "@/components/Footer";
 
-export const metadata = {
+export const metadata:Metadata = {
   title: "Upavan Villa - homestay in Aluva,Ernakulam",
   description:
     "Upavan Villa is a peaceful homestay in Aluva, Ernakulam. Close to Aluva Railway Station, Kochi International Airport, Rajagiri Hospital, Aluva Mahadeva Temple, and CIAL Convention Centre.",

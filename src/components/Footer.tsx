@@ -4,8 +4,8 @@ import { Facebook, Instagram } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata:Metadata={
-  title:"About"
+export const metadata: Metadata = {
+  title: "About",
 };
 
 export default function Footer() {
@@ -28,9 +28,9 @@ export default function Footer() {
             <p className="mt-4 text-sm text-[#FDEBC9]">
               upavanvilla@gmail.com
               <br />
-              +91 9961407770
-              <br />
               +91 9633216997
+              <br />
+              +91 9961407770
             </p>
           </div>
 

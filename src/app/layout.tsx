@@ -14,8 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://upavanvilla.com"),
   title: "Upavan Villa - Home Stay Booking in Aluva, Kochi | Near Airport",
   description: "Upavan Villa offers comfortable home stay bookings in Aluva, Kochi. Perfect for families and travelers, near Kochi Airport, Aluva Railway Station, and popular attractions.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({

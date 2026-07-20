@@ -1,9 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
   <url>
-    <loc>https://upavanvilla.com</loc>
-    <lastmod>2025-10-26</lastmod>
+    <loc>https://upavanvilla.com/</loc>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1756629445/WhatsApp_Image_2025-08-23_at_21.26.20_qbsqof.jpg</image:loc>
+      <image:title>Upavan Villa exterior view in Aluva</image:title>
+      <image:caption>Exterior view of Upavan Villa, a peaceful homestay in Aluva, Ernakulam.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1756629434/WhatsApp_Image_2025-08-23_at_21.24.32_ddgvsn.jpg</image:loc>
+      <image:title>Upavan Villa living room</image:title>
+      <image:caption>Cozy living room at Upavan Villa homestay.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1756629454/WhatsApp_Image_2025-08-23_at_21.26.33_1_aocnax.jpg</image:loc>
+      <image:title>Upavan Villa bedroom</image:title>
+      <image:caption>Comfortable bedroom at Upavan Villa in Aluva.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1756629444/WhatsApp_Image_2025-08-23_at_21.26.23_ywg2xv.jpg</image:loc>
+      <image:title>Upavan Villa dining area</image:title>
+      <image:caption>Dining area for guests staying at Upavan Villa.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1756629456/WhatsApp_Image_2025-08-23_at_21.26.40_pwvtre.jpg</image:loc>
+      <image:title>Upavan Villa bathroom facilities</image:title>
+      <image:caption>Modern bathroom facilities at Upavan Villa homestay.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1756629455/WhatsApp_Image_2025-08-23_at_21.26.42_erf8gi.jpg</image:loc>
+      <image:title>Upavan Villa garden view</image:title>
+      <image:caption>Garden view from Upavan Villa in Aluva.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1756629454/WhatsApp_Image_2025-08-23_at_21.26.41_ydnk1k.jpg</image:loc>
+      <image:title>Upavan Villa kitchen</image:title>
+      <image:caption>Spacious kitchen available for guests at Upavan Villa.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1756629453/WhatsApp_Image_2025-08-23_at_21.26.37_ostzrg.jpg</image:loc>
+      <image:title>Upavan Villa interiors</image:title>
+      <image:caption>Interior decor of Upavan Villa homestay in Aluva.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1756629452/WhatsApp_Image_2025-08-23_at_21.26.36_d2rooh.jpg</image:loc>
+      <image:title>Upavan Villa guest bedroom</image:title>
+      <image:caption>Guest bedroom with natural light at Upavan Villa.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1756629447/WhatsApp_Image_2025-08-23_at_21.26.25_t5k77z.jpg</image:loc>
+      <image:title>Upavan Villa daytime exterior</image:title>
+      <image:caption>Daytime exterior view of Upavan Villa.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1756629439/WhatsApp_Image_2025-08-23_at_21.24.33_xuc7mi.jpg</image:loc>
+      <image:title>Upavan Villa guest bathroom</image:title>
+      <image:caption>Clean guest bathroom at Upavan Villa homestay.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1756629441/WhatsApp_Image_2025-08-23_at_21.26.16_1_eyzgaa.jpg</image:loc>
+      <image:title>Upavan Villa veranda</image:title>
+      <image:caption>Relaxing veranda area at Upavan Villa in Aluva.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1757254939/areekalwaterfalls_ebce17.jpg</image:loc>
+      <image:title>Areekkal Waterfalls near Upavan Villa</image:title>
+      <image:caption>Areekkal Waterfalls, a scenic attraction near Kochi and Ernakulam.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1757255353/cherai-Beach-01_znepkd.jpg</image:loc>
+      <image:title>Cherai Beach near Kochi</image:title>
+      <image:caption>Cherai Beach, a popular beach attraction near Kochi.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1757256813/wonderla_n3kb9f.avif</image:loc>
+      <image:title>Wonderla Amusement Park Kochi</image:title>
+      <image:caption>Wonderla Amusement Park, a family attraction near Kochi.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1757255491/athirappally_waterfalls_kf7eup.avif</image:loc>
+      <image:title>Athirappilly Waterfalls Kerala</image:title>
+      <image:caption>Athirappilly Waterfalls, one of Kerala's most visited natural attractions.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1757256400/Kochi_climate_qf5dxz.jpg</image:loc>
+      <image:title>Kochi attractions near Upavan Villa</image:title>
+      <image:caption>Kochi, a historic coastal city near Upavan Villa in Aluva.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djdjfhkie/image/upload/v1757256311/PQ_Exotic_Birds_Park_mw1ijb.avif</image:loc>
+      <image:title>PQ Exotic Birds Park Kerala</image:title>
+      <image:caption>PQ Exotic Birds Park, a family-friendly attraction near Kochi.</image:caption>
+    </image:image>
   </url>
 </urlset>

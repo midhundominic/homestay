@@ -2,7 +2,7 @@ import ExploreSection from "@/components/ui/Explore";
 
 export default function ExplorePage() {
   return (
-    <section id="about">
+    <section id="about" className="scroll-mt-16 md:scroll-mt-24">
       {/* Normal Layout (Text Left, Images Right) */}
       <ExploreSection
         title="Property and Rooms"

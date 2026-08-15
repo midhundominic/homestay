@@ -53,16 +53,21 @@ const attractions = [
 
 export default function NearbyAttractionsServer() {
   return (
-    <section className="bg-gray-50 py-12">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-800">
-          Nearby Tourist Attractions in Kerala
-        </h2>
-        <p className="text-gray-500 mt-2 max-w-2xl mx-auto">
-          Discover the best tourist attractions near our property in Kerala,
-          including waterfalls, beaches, temples, and cultural landmarks around
-          Ernakulam.
-        </p>
+    <section className="bg-white py-16 md:py-24">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="max-w-3xl">
+          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-green-600">
+            Explore the Area
+          </span>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+            Nearby Tourist Attractions in Kerala
+          </h2>
+          <p className="mt-3 text-gray-500 md:text-lg">
+            Discover the best tourist attractions near our property in Kerala,
+            including waterfalls, beaches, temples, and cultural landmarks
+            around Ernakulam.
+          </p>
+        </div>
 
         {/* Pass data to Client Component only for animations */}
         <NearbyAttractionsClient attractions={attractions} />

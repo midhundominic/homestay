@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Footer() {
   return (
-    <section id="contact">
+    <section id="contact" className="scroll-mt-16 md:scroll-mt-24">
       <footer className="bg-[#1A1A1A] text-[#CCCCCC] pt-16 pb-8 px-6 md:px-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-20">
           {/* Contacts */}
@@ -70,7 +70,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#about"
-                  scroll={true}
+                  scroll={false}
                   className="hover:text-[#FDEBC9] transition-all duration-300 hover:translate-x-1 inline-block"
                 >
                   About
@@ -80,7 +80,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#gallery"
-                  scroll={true}
+                  scroll={false}
                   className="hover:text-[#FDEBC9] transition-all duration-300 hover:translate-x-1 inline-block"
                 >
                   Gallery

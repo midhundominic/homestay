@@ -4,12 +4,14 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLenis } from "lenis/react";
 import Button from "./ui/Button";
 import { Menu, X, Phone, Mail } from "lucide-react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const lenis = useLenis();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,12 +21,17 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Lock scrolling while the mobile menu is open. Lenis drives the page scroll,
+  // so stopping it is what actually holds the page still.
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
+    if (isOpen) lenis?.stop();
+    else lenis?.start();
     return () => {
       document.body.style.overflow = "auto";
+      lenis?.start();
     };
-  }, [isOpen]);
+  }, [isOpen, lenis]);
 
   return (
     <motion.header
@@ -65,6 +72,7 @@ export default function Header() {
           </Link>
           <Link
             href="#about"
+            scroll={false}
             className={`text-md font-medium transition-colors ${
               scrolled ? "text-gray-800" : "text-white"
             } hover:text-green-600`}
@@ -73,7 +81,7 @@ export default function Header() {
           </Link>
           <Link
             href="#gallery"
-            scroll={true}
+            scroll={false}
             className={`text-md font-medium transition-colors ${
               scrolled ? "text-gray-800" : "text-white"
             } hover:text-green-600`}
@@ -82,7 +90,7 @@ export default function Header() {
           </Link>
           <Link
             href="#contact"
-            scroll={true}
+            scroll={false}
             className={`text-md font-medium transition-colors ${
               scrolled ? "text-gray-800" : "text-white"
             } hover:text-green-600`}
@@ -141,13 +149,13 @@ export default function Header() {
               <Link href="/" onClick={() => setIsOpen(false)}>
                 Home
               </Link>
-              <Link href="#about" onClick={() => setIsOpen(false)}>
+              <Link href="#about" scroll={false} onClick={() => setIsOpen(false)}>
                 About
               </Link>
-              <Link href="#gallery" onClick={() => setIsOpen(false)}>
+              <Link href="#gallery" scroll={false} onClick={() => setIsOpen(false)}>
                 Gallery
               </Link>
-              <Link href="#contact" onClick={() => setIsOpen(false)}>
+              <Link href="#contact" scroll={false} onClick={() => setIsOpen(false)}>
                 Contact
               </Link>
 

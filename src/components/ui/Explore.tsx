@@ -28,7 +28,7 @@ import {
 } from "lucide-react";
 
 // Icon names are plain strings so server components can pass them as props.
-const featureIcons = {
+export const featureIcons = {
   building: Building2,
   bed: BedDouble,
   snowflake: Snowflake,
@@ -58,7 +58,7 @@ export type Feature = {
   text: string;
 };
 
-type ExploreProps = {
+export type ExploreContent = {
   eyebrow?: string;
   title: string;
   description: string;
@@ -66,6 +66,9 @@ type ExploreProps = {
   features?: Feature[];
   mainImage: string;
   subImage: string;
+};
+
+type ExploreProps = ExploreContent & {
   reverse?: boolean;
   /** Softly tinted background, for alternating section rhythm */
   muted?: boolean;

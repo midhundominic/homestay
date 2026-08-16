@@ -14,7 +14,10 @@ export default function ExplorePage() {
             icon: "building",
             text: "2 Floor Luxury Villa with ample car parking space",
           },
-          { icon: "bed", text: "4 spacious bedrooms" },
+          {
+            icon: "bed",
+            text: "4 spacious A/C bedrooms — 2 on the ground floor, 2 on the upper floor",
+          },
           {
             icon: "snowflake",
             text: "Fully Air-Conditioned – Stay cool and relaxed, no matter the weather.",

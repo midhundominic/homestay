@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 export const metadata:Metadata = {
   title: "Upavan Villa - homestay in Aluva,Ernakulam",
   description:
-    "Upavan Villa is a peaceful homestay in Aluva, Ernakulam. Close to Aluva Railway Station, Kochi International Airport, Rajagiri Hospital, Aluva Mahadeva Temple, and CIAL Convention Centre.",
+    "Upavan Villa is a peaceful homestay in Aluva, Ernakulam — a 2-floor villa with 4 air-conditioned bedrooms (2 per floor) and 5 washrooms. Close to Aluva Railway Station, Kochi International Airport, Rajagiri Hospital, Aluva Mahadeva Temple, and CIAL Convention Centre.",
   keywords: [
     "Upavan Villa",
     "Aluva homestay",
@@ -27,7 +27,7 @@ export const metadata:Metadata = {
   openGraph: {
     title: "Upavan Villa - Premium Homestay in Aluva, Ernakulam",
     description:
-      "Stay at Upavan Villa homestay in Aluva, Ernakulam – near Kochi International Airport, Aluva Railway Station, Rajagiri Hospital, and CIAL convention centre.",
+      "Stay at Upavan Villa homestay in Aluva, Ernakulam – 4 air-conditioned bedrooms across 2 floors, near Kochi International Airport, Aluva Railway Station, Rajagiri Hospital, and CIAL convention centre.",
     url: "https://upavanvilla.com",
     images: [
       {
